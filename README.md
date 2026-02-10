@@ -27,4 +27,9 @@ python a11y_audit.py notebooks/your-notebook.ipynb --remediate
 - **Automatic Remediation**: Fixes common issues like missing alt text, improper heading structure, and table headers
 - **Professional & Educational**: Technical terminology with clear explanations for non-experts
 
-See [A11Y_AUDIT_README.md](A11Y_AUDIT_README.md) for complete documentation.
+### Documentation
+
+- **[QUICKSTART.md](QUICKSTART.md)** - Get started in 3 steps
+- **[A11Y_AUDIT_README.md](A11Y_AUDIT_README.md)** - Complete documentation
+- **[notebooks/a11y-audit-example.ipynb](notebooks/a11y-audit-example.ipynb)** - Interactive tutorial
+- **[example-audit-report.html](example-audit-report.html)** - Sample HTML report
