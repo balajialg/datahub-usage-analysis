@@ -291,8 +291,9 @@ class NotebookA11yAuditor:
                             'description': f'Link has descriptive text: "{link_text[:50]}"'
                         })
                 
-                # Check for bare URLs (not in markdown link format)
-                bare_urls = re.finditer(r'(?<!\()\bhttps?://[^\s<>\)]+', source)
+                # Check for bare URLs (not in markdown link format or image format)
+                # Negative lookbehind for both ]( and ( to avoid matching URLs in markdown links/images
+                bare_urls = re.finditer(r'(?<!\]\()(?<!\()\bhttps?://[^\s<>\)]+', source)
                 for match in bare_urls:
                     url = match.group(0)
                     self.issues['warning'].append({
@@ -585,10 +586,12 @@ class NotebookRemediator:
                 
                 new_source = []
                 for line in source:
-                    # Wrap bare URLs in markdown links
+                    # Wrap bare URLs in markdown links (avoid matching URLs already in markdown links/images)
+                    # Check if line contains URLs that are not already in markdown format
                     original_line = line
+                    # Only match URLs that are not preceded by ]( or (
                     line = re.sub(
-                        r'(?<!\()\b(https?://[^\s<>\)]+)',
+                        r'(?<!\]\()(?<!\()\b(https?://[^\s<>\)]+)',
                         r'[Link to \1](\1)',
                         line
                     )

@@ -146,7 +146,7 @@ def run_audit(notebook):
     print_info(f"Report format: {report_format}")
     
     # Run the audit
-    cmd = ['python3', 'a11y_audit.py', 'audit', notebook, 
+    cmd = [sys.executable, 'a11y_audit.py', 'audit', notebook, 
            '--format', report_format, '--output', report_file]
     
     try:
@@ -200,7 +200,7 @@ def run_remediation(notebook):
     print_info(f"Output will be saved to: {output_file}")
     
     # Run remediation
-    cmd = ['python3', 'a11y_audit.py', 'remediate', notebook, '--output', output_file]
+    cmd = [sys.executable, 'a11y_audit.py', 'remediate', notebook, '--output', output_file]
     
     try:
         result = subprocess.run(cmd, capture_output=True, text=True)
@@ -241,7 +241,7 @@ def run_full_service(notebook):
         return
     
     # Run full service
-    cmd = ['python3', 'a11y_audit.py', 'full', notebook,
+    cmd = [sys.executable, 'a11y_audit.py', 'full', notebook,
            '--output-notebook', output_notebook,
            '--output-report', report_file,
            '--format', 'markdown']
