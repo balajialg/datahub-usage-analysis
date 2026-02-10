@@ -665,9 +665,10 @@ class AccessibilityRemediator:
                         self.changes_made.append(f'Added alt attribute to HTML image in cell {idx + 1}')
                     
                     # Fix HTML images with empty alt
-                    line = re.sub(r'alt=["\']["\']', 'alt="Image description needed"', line)
-                    if 'alt="Image description needed"' in line and 'alt=""' not in line:
+                    new_line = re.sub(r'alt=["\']["\']', 'alt="Image description needed"', line)
+                    if new_line != line:
                         modified = True
+                        line = new_line
                     
                     new_source.append(line)
                 
@@ -731,15 +732,20 @@ class AccessibilityRemediator:
                         
                         # If this is the first row and next line is not separator, add one
                         if in_table and not has_separator and i + 1 < len(source):
-                            next_line = source[i + 1] if i + 1 < len(source) else ''
+                            next_line = source[i + 1]
                             if '|' not in next_line or ('---' not in next_line and '===' not in next_line):
-                                # Count columns
-                                cols = line.count('|') - 1
-                                separator = '| ' + ' | '.join(['---'] * cols) + ' |\n'
-                                new_source.append(separator)
-                                modified = True
-                                self.changes_made.append(f'Added header separator to table in cell {idx + 1}')
-                                has_separator = True
+                                # Count columns - handle both `| col |` and `col |` formats
+                                cols = line.count('|')
+                                # If table has leading and trailing pipes (standard format)
+                                if line.strip().startswith('|') and line.strip().endswith('|'):
+                                    cols = cols - 1  # subtract 1 for leading pipe
+                                # Ensure we have at least 1 column
+                                if cols > 0:
+                                    separator = '| ' + ' | '.join(['---'] * cols) + ' |\n'
+                                    new_source.append(separator)
+                                    modified = True
+                                    self.changes_made.append(f'Added header separator to table in cell {idx + 1}')
+                                    has_separator = True
                     else:
                         in_table = False
                         new_source.append(line)
