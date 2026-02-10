@@ -57,10 +57,14 @@ gh api repos/balajialg/datahub-usage-analysis/issues \
 
 ## Re-running the Audit
 
-The audit script used is available in the PR. To re-run after making fixes:
+The audit script is available in `scripts/a11y_audit.py`. To re-run after making fixes:
 
 ```bash
-python3 /path/to/a11y_audit.py
+# From repository root (auto-detects notebooks/ directory)
+python3 scripts/a11y_audit.py
+
+# Or specify a custom notebooks directory
+python3 scripts/a11y_audit.py /path/to/notebooks
 ```
 
-The script will output results to console and save detailed JSON results.
+The script will output results to console and save detailed JSON results to `/tmp/a11y_audit_results.json`.

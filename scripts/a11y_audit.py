@@ -176,7 +176,23 @@ class NotebookA11yAuditor:
                         )
 
 def main():
-    notebooks_dir = Path('/home/runner/work/datahub-usage-analysis/datahub-usage-analysis/notebooks')
+    import sys
+    import os
+    
+    # Determine notebooks directory - accept as argument or use relative path
+    if len(sys.argv) > 1:
+        notebooks_dir = Path(sys.argv[1])
+    else:
+        # Use relative path from script location or current directory
+        script_dir = Path(__file__).parent
+        repo_root = script_dir.parent if script_dir.name == 'scripts' else Path.cwd()
+        notebooks_dir = repo_root / 'notebooks'
+    
+    if not notebooks_dir.exists():
+        print(f"Error: Notebooks directory not found: {notebooks_dir}")
+        print("Usage: python a11y_audit.py [notebooks_directory]")
+        sys.exit(1)
+    
     all_issues = {}
     
     print("=" * 80)
