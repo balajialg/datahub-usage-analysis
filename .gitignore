@@ -109,3 +109,5 @@ venv.bak/
 # Accessibility audit outputs
 *_audit_report.*
 *_fixed.ipynb
+*_accessible.ipynb
+*_accessible_demo.ipynb
