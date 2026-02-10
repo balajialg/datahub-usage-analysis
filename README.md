@@ -31,5 +31,6 @@ python a11y_audit.py notebooks/your-notebook.ipynb --remediate
 
 - **[QUICKSTART.md](QUICKSTART.md)** - Get started in 3 steps
 - **[A11Y_AUDIT_README.md](A11Y_AUDIT_README.md)** - Complete documentation
+- **[COMPARISON.md](COMPARISON.md)** - Comparison with JupyterLab-a11y-checker
 - **[notebooks/a11y-audit-example.ipynb](notebooks/a11y-audit-example.ipynb)** - Interactive tutorial
 - **[example-audit-report.html](example-audit-report.html)** - Sample HTML report
