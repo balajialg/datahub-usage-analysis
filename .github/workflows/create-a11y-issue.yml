@@ -1,0 +1,25 @@
+name: Create Accessibility Audit Issue
+
+# This workflow can be run manually to create a GitHub issue with the accessibility audit results
+# Run it from the Actions tab: https://github.com/balajialg/datahub-usage-analysis/actions
+
+on:
+  workflow_dispatch:  # Allows manual trigger from GitHub UI
+
+jobs:
+  create-issue:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Create GitHub Issue
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "Accessibility Audit Report: 100 Issues Found in Jupyter Notebooks"
+          content-filepath: ./ACCESSIBILITY_AUDIT_REPORT.md
+          labels: accessibility, documentation

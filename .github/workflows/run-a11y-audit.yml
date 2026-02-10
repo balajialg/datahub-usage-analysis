@@ -1,0 +1,33 @@
+name: Accessibility Audit
+
+# This workflow runs the accessibility audit on notebooks and can be triggered manually or on PR
+
+on:
+  workflow_dispatch:  # Manual trigger
+  pull_request:
+    paths:
+      - 'notebooks/**/*.ipynb'
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      
+      - name: Run Accessibility Audit
+        run: |
+          python3 scripts/a11y_audit.py
+      
+      - name: Upload Audit Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: accessibility-audit-results
+          path: /tmp/a11y_audit_results.json
+          retention-days: 30
