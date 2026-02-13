@@ -1,0 +1,128 @@
+{
+  "03-visualize-cost-and-usage.ipynb": {
+    "heading_structure": [
+      "First heading starts at level 2 instead of level 1: 'All graphs dealing w/any billing data are broken!'"
+    ],
+    "missing_chart_description": [
+      "Cell 17: Chart without nearby textual description",
+      "Cell 39: Chart without nearby textual description"
+    ]
+  },
+  "logs_visualization_dashboard.ipynb": {
+    "heading_structure": [
+      "Heading level jumps from 3 to 5: 'Making Graphs of Date of Usage Per Course'"
+    ],
+    "missing_alt_text": [
+      "Cell 23: Chart/image output has no alt text or description",
+      "Cell 24: Chart/image output has no alt text or description",
+      "Cell 26: Chart/image output has no alt text or description",
+      "Cell 28: Chart/image output has no alt text or description",
+      "Cell 30: Chart/image output has no alt text or description",
+      "Cell 33: Chart/image output has no alt text or description",
+      "Cell 34: Chart/image output has no alt text or description",
+      "Cell 35: Chart/image output has no alt text or description",
+      "Cell 37: Chart/image output has no alt text or description",
+      "Cell 39: Chart/image output has no alt text or description",
+      "Cell 42: Chart/image output has no alt text or description",
+      "Cell 43: Chart/image output has no alt text or description",
+      "Cell 44: Chart/image output has no alt text or description",
+      "Cell 45: Chart/image output has no alt text or description",
+      "Cell 46: Chart/image output has no alt text or description",
+      "Cell 48: Chart/image output has no alt text or description",
+      "Cell 50: Chart/image output has no alt text or description",
+      "Cell 51: Chart/image output has no alt text or description",
+      "Cell 52: Chart/image output has no alt text or description",
+      "Cell 53: Chart/image output has no alt text or description",
+      "Cell 54: Chart/image output has no alt text or description",
+      "Cell 58: Chart/image output has no alt text or description",
+      "Cell 60: Chart/image output has no alt text or description",
+      "Cell 61: Chart/image output has no alt text or description",
+      "Cell 63: Chart/image output has no alt text or description",
+      "Cell 64: Chart/image output has no alt text or description"
+    ],
+    "color_dependence": [
+      "Cell 24: Pie chart detected - may rely on color alone",
+      "Cell 24: Color used in plot - ensure not relying solely on color",
+      "Cell 30: Pie chart detected - may rely on color alone",
+      "Cell 34: Pie chart detected - may rely on color alone",
+      "Cell 35: Color used in plot - ensure not relying solely on color",
+      "Cell 39: Color used in plot - ensure not relying solely on color",
+      "Cell 60: Pie chart detected - may rely on color alone"
+    ],
+    "missing_chart_description": [
+      "Cell 23: Chart without nearby textual description",
+      "Cell 24: Chart without nearby textual description",
+      "Cell 26: Chart without nearby textual description",
+      "Cell 28: Chart without nearby textual description",
+      "Cell 30: Chart without nearby textual description",
+      "Cell 33: Chart without nearby textual description",
+      "Cell 34: Chart without nearby textual description",
+      "Cell 35: Chart without nearby textual description",
+      "Cell 39: Chart without nearby textual description",
+      "Cell 58: Chart without nearby textual description",
+      "Cell 61: Chart without nearby textual description",
+      "Cell 63: Chart without nearby textual description",
+      "Cell 64: Chart without nearby textual description"
+    ]
+  },
+  "nbgitpuller_processing_visualization.ipynb": {
+    "heading_structure": [
+      "Heading level jumps from 3 to 5: 'Making Graphs of Date of Usage Per Course'"
+    ],
+    "missing_alt_text": [
+      "Cell 22: Chart/image output has no alt text or description",
+      "Cell 23: Chart/image output has no alt text or description",
+      "Cell 25: Chart/image output has no alt text or description",
+      "Cell 27: Chart/image output has no alt text or description",
+      "Cell 29: Chart/image output has no alt text or description",
+      "Cell 32: Chart/image output has no alt text or description",
+      "Cell 33: Chart/image output has no alt text or description",
+      "Cell 34: Chart/image output has no alt text or description",
+      "Cell 36: Chart/image output has no alt text or description",
+      "Cell 38: Chart/image output has no alt text or description",
+      "Cell 41: Chart/image output has no alt text or description",
+      "Cell 42: Chart/image output has no alt text or description",
+      "Cell 43: Chart/image output has no alt text or description",
+      "Cell 44: Chart/image output has no alt text or description",
+      "Cell 45: Chart/image output has no alt text or description",
+      "Cell 46: Chart/image output has no alt text or description",
+      "Cell 47: Chart/image output has no alt text or description",
+      "Cell 49: Chart/image output has no alt text or description",
+      "Cell 50: Chart/image output has no alt text or description",
+      "Cell 51: Chart/image output has no alt text or description",
+      "Cell 52: Chart/image output has no alt text or description",
+      "Cell 53: Chart/image output has no alt text or description",
+      "Cell 54: Chart/image output has no alt text or description",
+      "Cell 55: Chart/image output has no alt text or description",
+      "Cell 57: Chart/image output has no alt text or description",
+      "Cell 59: Chart/image output has no alt text or description",
+      "Cell 60: Chart/image output has no alt text or description",
+      "Cell 62: Chart/image output has no alt text or description",
+      "Cell 63: Chart/image output has no alt text or description"
+    ],
+    "color_dependence": [
+      "Cell 23: Pie chart detected - may rely on color alone",
+      "Cell 23: Color used in plot - ensure not relying solely on color",
+      "Cell 29: Pie chart detected - may rely on color alone",
+      "Cell 33: Pie chart detected - may rely on color alone",
+      "Cell 34: Color used in plot - ensure not relying solely on color",
+      "Cell 38: Color used in plot - ensure not relying solely on color",
+      "Cell 59: Pie chart detected - may rely on color alone"
+    ],
+    "missing_chart_description": [
+      "Cell 22: Chart without nearby textual description",
+      "Cell 23: Chart without nearby textual description",
+      "Cell 25: Chart without nearby textual description",
+      "Cell 27: Chart without nearby textual description",
+      "Cell 29: Chart without nearby textual description",
+      "Cell 32: Chart without nearby textual description",
+      "Cell 33: Chart without nearby textual description",
+      "Cell 34: Chart without nearby textual description",
+      "Cell 38: Chart without nearby textual description",
+      "Cell 57: Chart without nearby textual description",
+      "Cell 60: Chart without nearby textual description",
+      "Cell 62: Chart without nearby textual description",
+      "Cell 63: Chart without nearby textual description"
+    ]
+  }
+}
