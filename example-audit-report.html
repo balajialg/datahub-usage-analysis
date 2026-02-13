@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Audit Report - 03-visualize-cost-and-usage.ipynb</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .summary {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .summary-stats {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .stat {
+            flex: 1;
+            padding: 15px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .critical { background-color: #fee; border-left: 4px solid #d00; }
+        .warning { background-color: #ffe; border-left: 4px solid #f90; }
+        .success { background-color: #efe; border-left: 4px solid #0a0; }
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .issue {
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 4px solid #ccc;
+            background: #fafafa;
+        }
+        .issue-critical { border-left-color: #d00; }
+        .issue-warning { border-left-color: #f90; }
+        .issue-success { border-left-color: #0a0; }
+        .issue-type {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .issue-location {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .issue-wcag {
+            color: #0066cc;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .issue-remediation {
+            background: #fff;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jupyter Notebook Accessibility Audit Report</h1>
+    <div class="summary">
+        <h2>Notebook: 03-visualize-cost-and-usage.ipynb</h2>
+        <div class="summary-stats">
+            <div class="stat critical">
+                <div class="stat-number">0</div>
+                <div>Critical Issues</div>
+            </div>
+            <div class="stat warning">
+                <div class="stat-number">9</div>
+                <div>Warnings</div>
+            </div>
+            <div class="stat success">
+                <div class="stat-number">4</div>
+                <div>Successful Checks</div>
+            </div>
+        </div>
+    </div>
+<div class="section"><h2>Warnings (Should Fix)</h2>
+<div class="issue issue-warning">
+<div class="issue-type">CODE_CONTEXT</div>
+<div class="issue-location">Location: Cells 2 and 3</div>
+<div>Multiple code cells without markdown explanation</div>
+<div class="issue-wcag">WCAG: WCAG 2.1 Level AAA - 3.1.5 Reading Level</div>
+<div class="issue-remediation"><strong>How to Fix:</strong> Add markdown cell explaining what the code does</div>
+</div>
+<div class="issue issue-warning">
+<div class="issue-type">CODE_CONTEXT</div>
+<div class="issue-location">Location: Cells 5 and 6</div>
+<div>Multiple code cells without markdown explanation</div>
+<div class="issue-wcag">WCAG: WCAG 2.1 Level AAA - 3.1.5 Reading Level</div>
+<div class="issue-remediation"><strong>How to Fix:</strong> Add markdown cell explaining what the code does</div>
+</div>
+<div class="issue issue-warning">
+<div class="issue-type">CODE_CONTEXT</div>
+<div class="issue-location">Location: Cells 9 and 10</div>
+<div>Multiple code cells without markdown explanation</div>
+<div class="issue-wcag">WCAG: WCAG 2.1 Level AAA - 3.1.5 Reading Level</div>
+<div class="issue-remediation"><strong>How to Fix:</strong> Add markdown cell explaining what the code does</div>
+</div>
+<div class="issue issue-warning">
+<div class="issue-type">CODE_CONTEXT</div>
+<div class="issue-location">Location: Cells 12 and 13</div>
+<div>Multiple code cells without markdown explanation</div>
+<div class="issue-wcag">WCAG: WCAG 2.1 Level AAA - 3.1.5 Reading Level</div>
+<div class="issue-remediation"><strong>How to Fix:</strong> Add markdown cell explaining what the code does</div>
+</div>
+<div class="issue issue-warning">
+<div class="issue-type">CODE_CONTEXT</div>
+<div class="issue-location">Location: Cells 16 and 17</div>
+<div>Multiple code cells without markdown explanation</div>
+<div class="issue-wcag">WCAG: WCAG 2.1 Level AAA - 3.1.5 Reading Level</div>
+<div class="issue-remediation"><strong>How to Fix:</strong> Add markdown cell explaining what the code does</div>
+</div>
+<div class="issue issue-warning">
+<div class="issue-type">CODE_CONTEXT</div>
+<div class="issue-location">Location: Cells 17 and 18</div>
+<div>Multiple code cells without markdown explanation</div>
+<div class="issue-wcag">WCAG: WCAG 2.1 Level AAA - 3.1.5 Reading Level</div>
+<div class="issue-remediation"><strong>How to Fix:</strong> Add markdown cell explaining what the code does</div>
+</div>
+<div class="issue issue-warning">
+<div class="issue-type">CODE_CONTEXT</div>
+<div class="issue-location">Location: Cells 20 and 21</div>
+<div>Multiple code cells without markdown explanation</div>
+<div class="issue-wcag">WCAG: WCAG 2.1 Level AAA - 3.1.5 Reading Level</div>
+<div class="issue-remediation"><strong>How to Fix:</strong> Add markdown cell explaining what the code does</div>
+</div>
+<div class="issue issue-warning">
+<div class="issue-type">CODE_CONTEXT</div>
+<div class="issue-location">Location: Cells 23 and 24</div>
+<div>Multiple code cells without markdown explanation</div>
+<div class="issue-wcag">WCAG: WCAG 2.1 Level AAA - 3.1.5 Reading Level</div>
+<div class="issue-remediation"><strong>How to Fix:</strong> Add markdown cell explaining what the code does</div>
+</div>
+<div class="issue issue-warning">
+<div class="issue-type">CODE_CONTEXT</div>
+<div class="issue-location">Location: Cells 38 and 39</div>
+<div>Multiple code cells without markdown explanation</div>
+<div class="issue-wcag">WCAG: WCAG 2.1 Level AAA - 3.1.5 Reading Level</div>
+<div class="issue-remediation"><strong>How to Fix:</strong> Add markdown cell explaining what the code does</div>
+</div>
+</div>
+<div class="section"><h2>Successful Checks</h2>
+<div class="issue issue-success">
+<div class="issue-type">NO_IMAGES</div>
+<div>No images found in notebook (Global)</div>
+</div>
+<div class="issue issue-success">
+<div class="issue-type">HAS_TITLE</div>
+<div>Notebook has a main title (Global)</div>
+</div>
+<div class="issue issue-success">
+<div class="issue-type">CODE_CELLS</div>
+<div>Found 25 code cells (Global)</div>
+</div>
+<div class="issue issue-success">
+<div class="issue-type">HAS_MARKDOWN</div>
+<div>Notebook has 18 markdown cells for context (Global)</div>
+</div>
+</div>
+
+</body>
+</html>
